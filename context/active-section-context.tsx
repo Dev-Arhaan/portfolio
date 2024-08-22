@@ -5,7 +5,7 @@ import React, { createContext, useContext, useState } from 'react';
 import type { SectionName } from '@/lib/types';
 
 type ActiveSectionContextProps = {
-  activeSection: SectionName,
+  activeSection: SectionName;
   setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
   timeOfLastClick: number;
   setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
@@ -37,11 +37,12 @@ export const ActiveSectionContextProvider = ({
   );
 };
 
-export function useActiveSectionContext(){
-    const context = useContext(ActiveSectionContext);
-    if (context === null) {
-      throw new Error('useActiveSectionContext must be used within an ActiveSectionContextProvider');
-    }
-    return context;
-  
+export function useActiveSectionContext() {
+  const context = useContext(ActiveSectionContext);
+  if (context === null) {
+    throw new Error(
+      'useActiveSectionContext must be used within an ActiveSectionContextProvider'
+    );
+  }
+  return context;
 }

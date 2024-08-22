@@ -1,4 +1,5 @@
 'use client';
+
 import React from 'react';
 import SectionHeading from './section-heading';
 import { FaPaperPlane } from 'react-icons/fa';
@@ -35,7 +36,6 @@ export default function Contact() {
       <form
         onSubmit={() => {
           alert('Form submitted successfully!');
-          
         }}
         action={async (formData) => {
           await sendEmail(formData);

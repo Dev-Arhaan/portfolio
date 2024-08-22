@@ -1,14 +1,15 @@
 'use client';
+
 import Image from 'next/image';
-import React, { useActionState } from 'react';
-import arhaan from '@/public/Arhaan.jpg';
+import React from 'react';
+import { FaGithubSquare } from 'react-icons/fa';
+import { HiDownload } from 'react-icons/hi';
+import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
-import { HiDownload } from 'react-icons/hi';
-import { FaGithubSquare } from 'react-icons/fa';
-import { useSectionInView } from '@/lib/hooks';
-import { useActiveSectionContext } from '@/context/active-section-context';
+import arhaan from '@/public/Arhaan.jpg';
 
 export default function Intro() {
   const { ref } = useSectionInView('Home', 0.5);

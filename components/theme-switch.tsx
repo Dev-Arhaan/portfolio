@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useTheme } from '@/context/theme-context';
 import { BsMoon, BsSun } from 'react-icons/bs';

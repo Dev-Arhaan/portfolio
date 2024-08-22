@@ -2,13 +2,14 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import clsx from 'clsx';
 import { links } from '@/lib/data';
 import Link from 'next/link';
-import clsx from 'clsx';
 import { useActiveSectionContext } from '@/context/active-section-context';
 
 const Header = () => {
-  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
   return (
     <header className="z-[999] relative">
       <motion.div
@@ -31,13 +32,13 @@ const Header = () => {
                 className={clsx(
                   'flex w-full justify-center items-center p-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-50',
                   {
-                    'text-gray-950 dark:text-gray-100': link.name === activeSection,
+                    'text-gray-950 dark:text-gray-100':
+                      link.name === activeSection,
                   }
                 )}
                 onClick={() => {
-                  setActiveSection(link.name)
-                  setTimeOfLastClick(Date.now())
-                
+                  setActiveSection(link.name);
+                  setTimeOfLastClick(Date.now());
                 }}
               >
                 {link.name}
