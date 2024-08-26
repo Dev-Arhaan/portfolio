@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import { PiStudent } from "react-icons/pi";
 
 export const links = [
   {
@@ -54,9 +55,17 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Jaipur, Raj",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I was a full-stack developer working as a freelancer. My stack included React, Next.js, TypeScript, Tailwind, Prisma and MongoDB.",
     icon: React.createElement(FaReact),
-    date: "2024 - present",
+    date: "2024",
+  },
+  {
+    title: "Pursuing MCA",
+    location: "Delhi NCR",
+    description:
+      "I'm now a student pursuing my masters. I am interested in working on GO backend jobs. I'm open to full-time opportunities/Internships.",
+    icon: React.createElement(PiStudent),
+    date: "2024",
   },
 ] as const;
 
