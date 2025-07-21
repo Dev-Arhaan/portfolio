@@ -9,7 +9,7 @@ import { useActiveSectionContext } from '@/context/active-section-context';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
-import arhaan from '@/public/Arhaan.jpg';
+import arhaan from '@/public/arhaan.jpg';
 
 export default function Intro() {
   const { ref } = useSectionInView('Home', 0.5);
@@ -65,7 +65,7 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I&apos;m Arhaan.</span> I&apos;m a{' '}
         <span className="font-bold">full-stack developer</span> with{' '}
-        <span className="font-bold">2 years</span> of experience. I enjoy
+        <span className="font-bold">1 year</span> of experience including internships and contract work. I enjoy
         building <span className="italic">sites & apps</span>. My focus is{' '}
         <span className="underline">React (Next.js)</span>.
       </motion.h1>

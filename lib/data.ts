@@ -63,9 +63,25 @@ export const experiencesData = [
     title: "Pursuing MCA",
     location: "Delhi NCR",
     description:
-      "I'm now a student pursuing my masters. I am interested in working on GO backend jobs. I'm open to full-time opportunities/Internships.",
+      "I'm now a student pursuing my masters. I am interested in working on backend and full stack jobs. I'm open to full-time opportunities/Internships.",
     icon: React.createElement(PiStudent),
-    date: "2024",
+    date: "2024 - 2026",
+  },
+  {
+    title: "Fullstack developer Intern",
+    location: "Remote, Hyd",
+    description:
+      "I worked as a front-end developer intern on a Chess teaching SaaS startup. I worked mainly on React and Dotnet.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2025",
+  },
+  {
+    title: "App Developer Intern",
+    location: "Remote, Pune",
+    description:
+      "I worked with a stealth social media startup on a contractual basis. I worked on the front-end with react native and typescript.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2025",
   },
 ] as const;
 
